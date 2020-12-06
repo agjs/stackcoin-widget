@@ -7,7 +7,7 @@
       "ether_profit": "0.6",
       "stackcoin_profit": "210",
       "instance": 7,
-      "purchased-portions": 4,
+      "portions": 4,
       "ether_stack_cost": 1.5
     },
      {
@@ -17,7 +17,7 @@
       "ether_profit": "2.6",
       "stackcoin_profit": "112",
       "instance": 4,
-      "purchased-portions": 24,
+      "portions": 24,
       "ether_stack_cost": 6.5
     }
   ]

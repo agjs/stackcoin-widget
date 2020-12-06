@@ -4,8 +4,9 @@
   "private": true,
   "dependencies": {
     "@babel/runtime": "7.12.5",
-    "@styled-icons/boxicons-logos": "^10.18.0",
+    "@styled-icons/boxicons-logos": "10.18.0",
     "@styled-icons/boxicons-regular": "10.18.0",
+    "@styled-icons/fa-brands": "^10.22.0",
     "classnames": "2.2.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",

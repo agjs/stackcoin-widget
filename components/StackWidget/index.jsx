@@ -1,6 +1,7 @@
 import React from "react";
 import { UpArrow, DownArrow } from "@styled-icons/boxicons-regular";
 import { Bitcoin } from "@styled-icons/boxicons-logos";
+import { Ethereum } from "@styled-icons/fa-brands";
 
 import classNames from "classnames";
 
@@ -34,15 +35,29 @@ const StackWidgetAddAmountControls = () => {
 
 const StackWidget = ({
   name,
-  etherProfit,
-  stackCoinProfit,
-  etherStackCost,
-  className
+  stack_level,
+  ether_profit,
+  stackcoin_profit,
+  instance,
+  portions,
+  ether_stack_cost
 }) => {
+  const getStackLogo = name => {
+    switch (name) {
+      case "Bitcoin Stack":
+        return <Bitcoin />;
+      case "Ether Stack":
+        return <Ethereum />;
+      default:
+        return <h1>NO LOGO</h1>;
+    }
+  };
+
   return (
     <div
       className={classNames("sc-stack-widget", {
-        "sc-stack-widget--bitcoin": name === "Bitcoin Stack"
+        "sc-stack-widget--bitcoin": name === "Bitcoin Stack",
+        "sc-stack-widget--ether": name === "Ether Stack"
       })}
     >
       <h1 className="sc-stack-widget__stack-name">{name}</h1>
@@ -76,7 +91,7 @@ const StackWidget = ({
           </span>
           <DownArrow />
         </div>
-        <Bitcoin className="sc-stack-widget__logo" />
+        {getStackLogo(name)}
         <div className="sc-stack-widget__purchased-portions">
           TODO: {portions}
         </div>
