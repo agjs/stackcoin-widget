@@ -7,7 +7,7 @@ import StackWidget from "../components/StackWidget";
 
 export default function App() {
   return (
-    <div>
+    <div className="stack-grid">
       {Dummy.stacks.map(stack => (
         <StackWidget {...stack} />
       ))}

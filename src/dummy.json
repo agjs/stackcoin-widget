@@ -10,7 +10,7 @@
       "portions": 4,
       "ether_stack_cost": 1.5
     },
-     {
+    {
       "id": 99871,
       "name": "Ether Stack",
       "stack_level": "07",
@@ -19,6 +19,16 @@
       "instance": 4,
       "portions": 24,
       "ether_stack_cost": 6.5
+    },
+    {
+      "id": 433871,
+      "name": "Ripple Stack",
+      "stack_level": "02",
+      "ether_profit": "44.6",
+      "stackcoin_profit": "44",
+      "instance": 2,
+      "portions": 1,
+      "ether_stack_cost": 18.5
     }
   ]
 }

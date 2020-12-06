@@ -2,6 +2,7 @@ import React from "react";
 import { UpArrow, DownArrow } from "@styled-icons/boxicons-regular";
 import { Bitcoin } from "@styled-icons/boxicons-logos";
 import { Ethereum } from "@styled-icons/fa-brands";
+import { Ripple } from "@styled-icons/simple-icons";
 
 import classNames from "classnames";
 
@@ -47,9 +48,11 @@ const StackWidget = ({
   const getStackLogo = name => {
     switch (name) {
       case "Bitcoin Stack":
-        return <Bitcoin />;
+        return <Bitcoin className="sc-stack-widget__logo" />;
       case "Ether Stack":
-        return <Ethereum />;
+        return <Ethereum className="sc-stack-widget__logo" />;
+      case "Ripple Stack":
+        return <Ripple className="sc-stack-widget__logo" />;
       default:
         return <h1>NO LOGO</h1>;
     }
@@ -59,7 +62,8 @@ const StackWidget = ({
     <div
       className={classNames("sc-stack-widget", {
         "sc-stack-widget--bitcoin": name === "Bitcoin Stack",
-        "sc-stack-widget--ether": name === "Ether Stack"
+        "sc-stack-widget--ether": name === "Ether Stack",
+        "sc-stack-widget--ripple": name === "Ripple Stack"
       })}
     >
       <h1 className="sc-stack-widget__stack-name">{name}</h1>

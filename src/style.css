@@ -2,6 +2,7 @@
   --border-radius: 20px;
   --bitcoin-main-color: #e9a24f;
   --ether-main-color: #4f8de9;
+  --ripple-main-color: #175ca1;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
@@ -18,4 +19,9 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+.stack-grid {
+  display: flex;
+  justify-content: flex-start;
 }
