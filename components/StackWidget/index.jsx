@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 
 const StackWidget = ({
   name,
@@ -9,9 +9,11 @@ const StackWidget = ({
 }) => {
   return (
     <div className="sc-stack-widget">
-      <div />
+      <h1 className="sc-stack-widget__stack-name">Bitcoin Stack</h1>
       <header className="sc-stack-widget__header">
-        <div className="sc-stack-widget__header__item">1</div>
+        <div className="sc-stack-widget__header__item">
+          <h5 className="sc-stack-widget__header__item__title">Stack Level</h5>
+        </div>
         <div className="sc-stack-widget__header__item">2</div>
         <div className="sc-stack-widget__header__item">3</div>
       </header>

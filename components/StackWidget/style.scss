@@ -1,0 +1,23 @@
+.sc-stack-widget {
+  max-width: 500px;
+  border: 1px solid black;
+  padding: 40px;
+
+  &__stack-name {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      border: 1px solid black;
+      width: 30%;
+    }
+  }
+
+  &__instance-bar {
+  }
+}
