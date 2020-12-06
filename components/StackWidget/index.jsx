@@ -1,4 +1,7 @@
 import React from "react";
+
+import { UpArrow, DownArrow } from "@styled-icons/boxicons-regular";
+
 import "./style.scss";
 
 const StackWidgetButton = ({ label, onClick }) => {

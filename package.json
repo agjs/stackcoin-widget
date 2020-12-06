@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "@styled-icons/boxicons-regular": "^10.18.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-is": "17.0.1",
+    "styled-components": "5.2.1",
+    "styled-icons": "10.22.0"
   },
   "scripts": {
     "start": "react-scripts start",

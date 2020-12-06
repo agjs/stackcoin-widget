@@ -3,6 +3,8 @@
   border: 1px solid black;
   padding: 40px;
   text-transform: uppercase;
+  border-radius: var(--border-radius);
+  margin: 50px;
 
   &__stack-name {
     font-size: 4rem;
@@ -15,9 +17,10 @@
     align-items: center;
     text-align: center;
     &__item {
-      padding: 10px;
+      padding: 10px 0;
       border: 1px solid black;
       width: 30%;
+      border-radius: var(--border-radius);
     }
   }
 
