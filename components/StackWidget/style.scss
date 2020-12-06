@@ -2,6 +2,7 @@
   max-width: 500px;
   border: 1px solid black;
   padding: 40px;
+  text-transform: uppercase;
 
   &__stack-name {
     font-size: 4rem;
@@ -12,12 +13,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     &__item {
+      padding: 10px;
       border: 1px solid black;
       width: 30%;
     }
   }
 
+  &__middle-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+
   &__instance-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__add-remove-controls {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__footer {
+    &__row {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
