@@ -119,13 +119,6 @@ const StackWidget = props => {
           <StackWidgetButton>Buy Half</StackWidgetButton>
           <StackWidgetButton>Buy All</StackWidgetButton>
         </div>
-        // TODO
-        <div className="sc-stack-widget__footer__row">
-          // <StackWidgetButton>Add</StackWidgetButton>
-          // <StackWidgetAddRemoveControls />
-          // <StackWidgetAddAmountControls />
-          //
-        </div>
       </div>
     </div>
   );
