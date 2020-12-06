@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { UpArrow, DownArrow } from "@styled-icons/boxicons-regular";
 import { Bitcoin } from "@styled-icons/boxicons-logos";
 import { Ethereum } from "@styled-icons/fa-brands";
@@ -36,15 +36,19 @@ const StackWidgetAddAmountControls = () => {
   );
 };
 
-const StackWidget = ({
-  name,
-  stack_level,
-  ether_profit,
-  stackcoin_profit,
-  instance,
-  portions,
-  ether_stack_cost
-}) => {
+const StackWidget = props => {
+  const [state, setState] = useState(props.stack);
+
+  const {
+    name,
+    stack_level,
+    ether_profit,
+    stackcoin_profit,
+    instance,
+    portions,
+    ether_stack_cost
+  } = props.stack;
+
   const getStackLogo = name => {
     switch (name) {
       case "Bitcoin Stack":
@@ -115,10 +119,12 @@ const StackWidget = ({
           <StackWidgetButton>Buy Half</StackWidgetButton>
           <StackWidgetButton>Buy All</StackWidgetButton>
         </div>
+        // TODO
         <div className="sc-stack-widget__footer__row">
-          <StackWidgetButton>Add</StackWidgetButton>
-          <StackWidgetAddRemoveControls />
-          <StackWidgetAddAmountControls />
+          // <StackWidgetButton>Add</StackWidgetButton>
+          // <StackWidgetAddRemoveControls />
+          // <StackWidgetAddAmountControls />
+          //
         </div>
       </div>
     </div>

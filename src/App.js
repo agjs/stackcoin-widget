@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="stack-grid">
       {Dummy.stacks.map(stack => (
-        <StackWidget {...stack} />
+        <StackWidget stack={stack} />
       ))}
     </div>
   );
