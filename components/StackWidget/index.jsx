@@ -5,6 +5,8 @@ import { Ethereum } from "@styled-icons/fa-brands";
 
 import classNames from "classnames";
 
+// Icon Font: https://styled-icons.js.org/
+
 import "./style.scss";
 
 const StackWidgetButton = ({ children, onClick }) => {
