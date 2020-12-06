@@ -1,38 +1,64 @@
 .sc-stack-widget {
-  max-width: 500px;
-  border: 1px solid black;
-  padding: 40px;
+  &--bitcoin {
+    --color: var(--bitcoin-main-color);
+  }
+
+  max-width: 365px;
+  border: 3px solid var(--color);
+  padding: 20px;
   text-transform: uppercase;
   border-radius: var(--border-radius);
   margin: 50px;
+  text-align: center;
+
+  &__button {
+    background: var(--color);
+    border-radius: 10px;
+    border: 0;
+    height: 40px;
+  }
+
+  &__logo {
+    width: 200px;
+    fill: var(--color);
+  }
 
   &__stack-name {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     &__item {
       padding: 10px 0;
-      border: 1px solid black;
+      border-bottom: 1px solid #eaeaea;
       width: 30%;
-      border-radius: var(--border-radius);
+      &__value {
+        font-size: 2rem;
+      }
+      &__title {
+        font-size: 0.8rem;
+      }
     }
   }
 
   &__middle-section {
     display: flex;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 25px auto;
   }
 
   &__instance-bar {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
   }
 
   &__add-remove-controls {
@@ -40,10 +66,22 @@
     flex-direction: column;
   }
 
+  &__ether-stack-cost {
+    margin: 25px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+    &__value {
+      font-size: 2.5rem;
+    }
+  }
+
   &__footer {
     &__row {
       display: flex;
       justify-content: space-between;
+      * {
+        flex-grow: 1;
+      }
     }
   }
 }
